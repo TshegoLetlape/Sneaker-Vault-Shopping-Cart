@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/icon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/icon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/icon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="images/icon/site.webmanifest" />
+    <title>Sneaker Vault</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="container">
+      <header class="d-flex flex-wrap justify-content-center py-2 mb-4">
+        <a
+          href="#Cart"
+          class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+        >
+          <img
+            src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExbHBqZ3gxcGNqb3Jsb25tNGVxcWlld2lsZmdmNDB6bmpwNzFsOGh5MCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/RSZI67yZwYsxi/200.gif"
+            alt="logo"
+            width="70"
+            height="70"
+          />
+          <span class="fs-2">
+            <h1>
+              <strong>SNEAKER VAULT</strong>
+            </h1></span
+          >
+        </a>
+
+        <div class="ml-auto align-self-center">
+          <button type="button" class="btn btn-dark text-white me-2">
+            <a href="#Cart" class="remove-focus-styles">Pick Your Kicks</a>
+          </button>
+        </div>
+      </header>
+    </div>
+    <!-- Hero Section -->
+    <div class="container col-xxl-8 px-4 py-1">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img
+            src="https://i.pinimg.com/originals/75/ee/39/75ee392159be8a3e25094c94ae7e03d4.gif"
+            class="d-block mx-lg-auto img-fluid"
+            alt="Bootstrap Themes"
+            width="700"
+            height="500"
+            loading="lazy"
+          />
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+            ELEVATE YOUR <br />
+            SOLE GAME
+          </h1>
+          <p class="lead">Curated Collection Of Classic Kicks.</p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <button type="button" class="btn btn-outline-dark btn-lg px-4">
+              <a href="#Cart" class="remove-focus-styles">Shop Below</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- First Sneaker -->
+
+    <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">JUST DROPPED</h1>
+    <br />
+    <div class="container row-cards">
+      <div class="card" id="card1">
+        <h4>Air Jordan 1</h4>
+        <img src="images/airjordan.png" alt="Sneaker 1" />
+        <p>Price: $450</p>
+        <div class="quantity-controls">
+          <span class="quantity-label">Quantity:</span>
+          <input type="number" class="quantity-input" value="1" min="1" />
+        </div>
+        <label for="size1">Size (UK):</label>
+        <div class="size-buttons">
+          <button class="size-button" data-size="4" onclick="selectSize(1, 4)">
+            4
+          </button>
+          <button class="size-button" data-size="5" onclick="selectSize(1, 5)">
+            5
+          </button>
+          <button class="size-button" data-size="6" onclick="selectSize(1, 6)">
+            6
+          </button>
+          <button class="size-button" data-size="8" onclick="selectSize(1, 8)">
+            8
+          </button>
+          <button class="size-button" data-size="9" onclick="selectSize(1, 9)">
+            9
+          </button>
+        </div>
+        <button class="add-to-cart-button" onclick="addToCart(1)">
+          Add to Cart
+        </button>
+      </div>
+
+      <!-- Second Sneaker -->
+      <div class="card" id="card2">
+        <h4>Yeezy 350</h4>
+        <img
+          src="https://thumbs.gfycat.com/UnimportantRareEyelashpitviper-max-1mb.gif"
+          alt="Sneaker 2"
+        />
+        <p>Price: $300</p>
+        <div class="quantity-controls">
+          <span class="quantity-label">Quantity:</span>
+          <input type="number" class="quantity-input" value="1" min="1" />
+        </div>
+        <label for="size1">Size (UK):</label>
+        <div class="size-buttons">
+          <button class="size-button" data-size="4" onclick="selectSize(2, 4)">
+            4
+          </button>
+          <button class="size-button" data-size="5" onclick="selectSize(2, 5)">
+            5
+          </button>
+          <button class="size-button" data-size="6" onclick="selectSize(2, 6)">
+            6
+          </button>
+          <button class="size-button" data-size="7" onclick="selectSize(2, 7)">
+            7
+          </button>
+          <button
+            class="size-button"
+            data-size="10"
+            onclick="selectSize(2, 10)"
+          >
+            10
+          </button>
+        </div>
+        <button class="add-to-cart-button" onclick="addToCart(2)">
+          Add to Cart
+        </button>
+      </div>
+
+      <!-- Third Sneaker -->
+      <div class="card" id="card3">
+        <h4>Adidas x BAPE</h4>
+        <img src="images/bape.png" alt="Sneaker 3" />
+        <p>Price: $190</p>
+        <div class="quantity-controls">
+          <span class="quantity-label">Quantity:</span>
+          <input type="number" class="quantity-input" value="1" min="1" />
+        </div>
+        <label for="size1">Size (UK):</label>
+        <div class="size-buttons">
+          <button class="size-button" data-size="4" onclick="selectSize(3, 4)">
+            4
+          </button>
+          <button class="size-button" data-size="5" onclick="selectSize(3, 5)">
+            5
+          </button>
+          <button class="size-button" data-size="6" onclick="selectSize(3, 6)">
+            6
+          </button>
+          <button class="size-button" data-size="8" onclick="selectSize(3, 8)">
+            8
+          </button>
+        </div>
+        <button class="add-to-cart-button" onclick="addToCart(3)">
+          Add to Cart
+        </button>
+      </div>
+    </div>
+    <br />
+
+    <!-- Order Summary -->
+
+    <div class="cart-section">
+      <h2><strong>ORDER SUMMARY</strong></h2>
+      <div class="cart-contents" id="cartContents"></div>
+      <div class="total-cost" id="totalCost"></div>
+      <br />
+      <div class="ml-auto align-self-center">
+        <button
+          type="button"
+          class="btn btn-dark text-white me-2"
+          onclick="clearCart()"
+        >
+          Clear Cart
+        </button>
+      </div>
+    </div>
+
+    <!-- JavaScript Links-->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
