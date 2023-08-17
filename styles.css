@@ -128,3 +128,14 @@ select {
   padding: 5px;
   margin-right: 5px;
 }
+@media (max-width: 768px) {
+  /* Adjust styles for screens up to 768px */
+  .row-cards {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+    margin: 15px 0;
+  }
+}
